@@ -24,7 +24,7 @@ function updateProgressBar(gigs) {
     if (percentage > 70) {
         currentUsageText.style.color = 'white';
         currentUsageText.style.fontWeight = 'bold';
-        progressBar.style.backgroundColor = '#ff3c00';  // Turn red if more than 50%
+        progressBar.style.backgroundColor = '#ff3c00';
     }
     
     progressBar.style.width = percentage + '%';
