@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghuze's Vault</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="dark-theme">
+    <!-- Navbar with Logo -->
+    <nav>
+        <nav class="custom-navbar">
+            <div class="nav-wrapper">
+                <div class="logo-container">
+                    <a href="#" class="brand-logo center">
+                        <img src="logo.png" alt="Website Logo">
+                    </a>
+                </div>
+
+                <div class="toggle-btn-container">
+                    <button id="theme-toggle" class="btn material-icons">
+                        <i class="material-icons">dark_mode</i>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Two Side by Side Buttons -->
+    <div class="container-btns container">
+        <div class="row center-align"> 
+            <div class="col s12 m6">
+                <a href="./roms/" class="btn-large waves-effect waves-light teal">ROMS</a>
+            </div>
+            <div class="col s12 m6">
+                <a href="./movies/" class="btn-large waves-effect waves-light orange">MOVIES</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Progress Bar Container -->
+    <div class="container">
+        <h4 class="center-align">Storage Status</h4>
+        <div class="progress-container">
+            <span class="progress-text left">0 GB</span>
+            <div class="progress">
+                <div id="progress-bar" class="determinate" style="width: 0%"></div>
+            </div>
+            <span id="max-usage" class="progress-text right">100%</span>
+            <span id="current-usage" class="progress-text center">0%</span>
+        </div>
+    </div>
+
+    <!-- Information -->
+    <div class="container">
+        <h4 class="center-align">About the vault</h4>
+            <p>
+                This is a file storage vault. It is meant to store games ISOs and other files that are being taken down from the internet en masse.
+            </p>
+            <p>
+                This is a private server. If you see this page, you've already been authenticated and you have been given access. There is also a login for this specific website but I don't use it, so you may just ignore it. No features are kept from you buy not having an account.
+            </p>
+            <p>
+                Bigger games MUST be zipped. The server will check for a .zip file format. If you try to upload a game and it doesn't work, try zipping it first.
+            </p>
+            <p>
+                Follow the instructions bellow to keep this thing organized and we'll all have a good time :-)
+            </p>
+    </div>
+
+    <!-- Step-by-Step Instructions with Images -->
+    <div class="container">
+        <h4 class="center-align">How to use the Vault</h4>
+            <h5 class="center-align">How to upload content</h5>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Step 0 (games only)</h6>
+                    <p>Go to the correct folder for the console of the game you want to upload</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Step 1</h6>
+                    <p>
+                        Create a subfolder for the game/movie you want to upload. Click on "upload" then "create folder" and enter the name of the game/movie. For movies, also add the year after the title of the movie in parentheses. Example : "Dune: Part One (2021)"
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6 >Step 2</h6>
+                    <p>
+                        Navigate inside the newly created folder and click on "upload". This time, select "pick a file" and select the file you wish to upload. For larger games, please make sure it’s a .zip archive. No need to do the same for movies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Step 3</h6>
+                    <p>
+                        Once the file is selected, click on “send x files” to upload the file. This may take some time for larger files.
+                    </p>
+                </div>
+            </div>
+
+            <div class="center-align">
+                <video width="640" height="360" controls>
+                    <source src="upload_game.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <h5 class="center-align">How to download content</h5>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Step 1</h6>
+                    <p>
+                        Navigate to the parent folder of the content you wish to download.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6>Step 2</h6>
+                    <p>
+                        Click on the file you want to download.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col s12">
+                    <h6 >Step 3</h6>
+                    <p>
+                        In the pop-up box, click Download.
+                    </p>
+                </div>
+            </div>
+
+            <div class="center-align">
+                <video width="640" height="360" controls>
+                    <source src="download_game.mp4" type="video/mp4">
+                </video>
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="usage.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+</html>
